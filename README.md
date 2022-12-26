@@ -16,6 +16,4 @@ sudo chmod +x *
 ./apk-builder.sh
 
 
-./msfconsole -r android.rc
-
 # Please set Your IP in LHOST after opening of msfconsole
