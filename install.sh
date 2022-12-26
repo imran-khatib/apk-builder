@@ -6,6 +6,7 @@ BLUE="\e[94m"
 GREEN="\e[92m"
 STOP="\e[0m"
 printf "${BLUE}"
+echo
 echo "Installing Zipalign wait.................."
 echo "==========================================="
 echo
@@ -18,7 +19,7 @@ if [[ $? -ne 0 ]] ; then
     printf "${STOP}"
     exit 1
 fi
-
+echo
 echo "Installing JDK.........................."
 echo "==========================================="
 echo
@@ -29,9 +30,10 @@ if [[ $? -ne 0 ]] ; then
     printf "${STOP}"
     exit 1
 fi
+echo
 echo "Installing Toilet.........😝😝😝 "
 echo "==========================================="
-
+echo
 sudo apt-get install -y toilet
 echo
 if [[ $? -ne 0 ]] ; then
@@ -42,7 +44,10 @@ if [[ $? -ne 0 ]] ; then
 else
     printf "${ORANGE}"
     echo "Installation Finished........"
-    echo "==========================================="
     printf "${STOP}"
 fi
-
+printf "${BLUE}"
+echo "============================================"
+echo
+echo
+printf "${STOP}"
