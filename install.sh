@@ -36,3 +36,10 @@ if [[ $? -ne 0 ]] ; then
     exit 1
 fi
 
+echo "============================================"
+
+printf "${ORANGE}"
+echo "Installation Finished........"
+printf "${STOP}"
+
+
