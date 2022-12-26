@@ -18,8 +18,9 @@ if [[ $? -ne 0 ]] ; then
     printf "${STOP}"
     exit 1
 fi
-echo "==========================================="
+
 echo "Installing JDK.........................."
+echo "==========================================="
 echo
 sudo apt-get install default-jdk -y
 if [[ $? -ne 0 ]] ; then
@@ -28,8 +29,9 @@ if [[ $? -ne 0 ]] ; then
     printf "${STOP}"
     exit 1
 fi
-echo "==========================================="
 echo "Installing Toilet.........😝😝😝 "
+echo "==========================================="
+
 sudo apt-get install -y toilet
 echo
 if [[ $? -ne 0 ]] ; then
@@ -40,8 +42,7 @@ if [[ $? -ne 0 ]] ; then
 else
     printf "${ORANGE}"
     echo "Installation Finished........"
+    echo "==========================================="
     printf "${STOP}"
 fi
-printf "${BLUE}"
-echo "============================================"
-printf "${STOP}"
+
