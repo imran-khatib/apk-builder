@@ -9,9 +9,13 @@
 
 #sudo chmod +x *
 
-./install.sh
-./apk-builder.sh
 
-./msfconsole -r android.rc
+#./install.sh
+
+
+#./apk-builder.sh
+
+
+#./msfconsole -r android.rc
 
 # Please set Your IP in LHOST after opening of msfconsole
