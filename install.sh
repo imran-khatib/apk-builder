@@ -10,28 +10,29 @@ echo "==========================================="
 echo
 echo
 sudo apt-get install zipalign -y
-if [ -z $1 ];then
-	printf "${RED}"
-	echo "Error Occured!"
-	printf "${STOP}"
-	exit 0;
+if [[ $? -ne 0 ]] ; then
+    printf "${RED}"
+    echo "Error Occured!"
+    printf "${STOP}"
+    exit 1
 fi
 echo
 echo "==========================================="
 echo "Installing JDK.........................."
 
 sudo apt-get install default-jdk -y
-if [ -z $1 ];then
-	printf "${RED}"
-	echo "Error Occured!"
-	printf "${STOP}"
-	exit 0;
+if [[ $? -ne 0 ]] ; then
+    printf "${RED}"
+    echo "Error Occured!"
+    printf "${STOP}"
+    exit 1
 fi
 echo "Installing Toilet.........😝😝😝 "
 apt-get install toilet
-if [ -z $1 ];then
-	printf "${RED}"
-	echo "Error Occured!"
-	printf "${STOP}"
-	exit 0;
+if [[ $? -ne 0 ]] ; then
+    printf "${RED}"
+    echo "Error Occured!"
+    printf "${STOP}"
+    exit 1
 fi
+
