@@ -9,7 +9,9 @@ echo "Installing Zipalign wait.................."
 echo "==========================================="
 echo
 echo
+
 sudo apt-get install zipalign -y
+echo
 if [[ $? -ne 0 ]] ; then
     printf "${RED}"
     echo "Error Occured!"
@@ -19,7 +21,7 @@ fi
 echo
 echo "==========================================="
 echo "Installing JDK.........................."
-
+echo
 sudo apt-get install default-jdk -y
 if [[ $? -ne 0 ]] ; then
     printf "${RED}"
@@ -27,8 +29,10 @@ if [[ $? -ne 0 ]] ; then
     printf "${STOP}"
     exit 1
 fi
+echo
 echo "Installing Toilet.........😝😝😝 "
 sudo apt-get install -y toilet
+echo
 if [[ $? -ne 0 ]] ; then
     printf "${RED}"
     echo "Error Occured!"
@@ -44,4 +48,3 @@ echo "============================================"
 
 
  printf "${STOP}"
-
