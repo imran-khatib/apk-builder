@@ -1,3 +1,4 @@
+#!/bin/bash
 clear
 RED="\e[31m"
 ORANGE="\e[33m"
