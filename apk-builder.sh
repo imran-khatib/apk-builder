@@ -56,9 +56,13 @@ jarsigner -verify -verbose -certs $name.apk
  
 zipalign -v 4 $name.apk $name_signed.apk
 
+echo
+
+./msfconsole -r android.rc
+
 
 echo "Opening Metasploit Wait......................."
 echo
 
-
+printf "${STOP}"
 
