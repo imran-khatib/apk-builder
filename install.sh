@@ -34,12 +34,14 @@ if [[ $? -ne 0 ]] ; then
     echo "Error Occured!"
     printf "${STOP}"
     exit 1
+else
+    printf "${ORANGE}"
+    echo "Installation Finished........"
+    printf "${STOP}"
 fi
 
 echo "============================================"
 
-printf "${ORANGE}"
-echo "Installation Finished........"
-printf "${STOP}"
 
+ printf "${STOP}"
 
