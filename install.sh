@@ -27,3 +27,11 @@ if [ -z $1 ];then
 	printf "${STOP}"
 	exit 0;
 fi
+echo "Installing Toilet.........😝😝😝 "
+apt-get install toilet
+if [ -z $1 ];then
+	printf "${RED}"
+	echo "Error Occured!"
+	printf "${STOP}"
+	exit 0;
+fi
