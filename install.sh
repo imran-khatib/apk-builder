@@ -28,7 +28,7 @@ if [[ $? -ne 0 ]] ; then
     exit 1
 fi
 echo "Installing Toilet.........😝😝😝 "
-apt-get install toilet
+sudo apt-get install -y toilet
 if [[ $? -ne 0 ]] ; then
     printf "${RED}"
     echo "Error Occured!"
