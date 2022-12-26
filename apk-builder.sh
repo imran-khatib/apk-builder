@@ -6,12 +6,11 @@ BLUE="\e[94m"
 GREEN="\e[92m"
 STOP="\e[0m"
 toilet -f mono12 -F metal APK_Gen
-if [ -z $1 ];then
-	printf "${RED}"
-	echo "Please Install toilet! 😝😝😝"
-	printf "${STOP}"
-	exit 0;
+if [[ $? -ne 0 ]] ; then
+    echo "Please Install toilet! 😝😝😝"
+    exit 1
 fi
+
 echo
 echo
 printf "${GREEN}"
