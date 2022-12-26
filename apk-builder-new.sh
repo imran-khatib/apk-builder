@@ -26,6 +26,7 @@ read port
 echo
 echo -en "Enter APK Name: "
 read name
+echo
 echo -en "Enter Alias for KeyStore : "
 read alias
 echo
@@ -42,6 +43,6 @@ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore key.keystore $n
  
 jarsigner -verify -verbose -certs $name.apk
  
-#sudo apt-get install zipalign -y
+
  
 zipalign -v 4 $name.apk $name_signed.apk
