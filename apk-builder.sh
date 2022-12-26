@@ -12,6 +12,8 @@ if [ -z $1 ];then
 	printf "${STOP}"
 	exit 0;
 fi
+echo
+echo
 printf "${GREEN}"
 
 	
