@@ -7,7 +7,9 @@ GREEN="\e[92m"
 STOP="\e[0m"
 toilet -f mono12 -F metal APK_Gen
 if [[ $? -ne 0 ]] ; then
+    printf "${GREEN}"
     echo "Please Install toilet! 😝😝😝"
+    printf "${STOP}"
     exit 1
 fi
 
