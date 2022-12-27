@@ -52,7 +52,7 @@ zipalign -v 4 $name.apk $name_signed.apk
 
 echo
 echo "=============================================="
-./msfconsole -r android.rc
+msfconsole -r android.rc
 
 
 echo "Opening Metasploit Wait......................."
