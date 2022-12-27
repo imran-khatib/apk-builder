@@ -42,7 +42,7 @@ keytool -genkey -V -keystore key.keystore -alias $als -keyalg RSA -keysize 2048 
  
 #sudo apt-get install default-jdk -y
  
-jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore key.keystore $name.apk $alias
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore key.keystore $name.apk $als
  
 jarsigner -verify -verbose -certs $name.apk
  
