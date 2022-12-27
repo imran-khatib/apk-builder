@@ -6,12 +6,6 @@ BLUE="\e[94m"
 GREEN="\e[92m"
 STOP="\e[0m"
 toilet -f mono12 -F metal APK_Gen
-if [[ $? -ne 0 ]] ; then
-    printf "${GREEN}"
-    echo "Please Install toilet! 😝😝😝"
-    printf "${STOP}"
-    exit 1
-fi
 
 echo
 echo
@@ -57,7 +51,7 @@ jarsigner -verify -verbose -certs $name.apk
 zipalign -v 4 $name.apk $name_signed.apk
 
 echo
-
+echo "=============================================="
 ./msfconsole -r android.rc
 
 
