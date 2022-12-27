@@ -16,4 +16,4 @@ sudo chmod +x *
 ./apk-builder.sh
 
 
-# Please set Your IP in LHOST after opening of msfconsole
+# Please set Your IP in LHOST & LPORT  after opening of msfconsole
